@@ -1,6 +1,7 @@
 import React from 'react';
 import './newcard.css';
 import avatar from 'assets/images/profile.jpg';
+import { FaTwitter, FaFacebook, FaInstagram, FaGithub } from 'react-icons/fa'; // Import icons
 
 export default function NewCard() {
   return (
@@ -42,7 +43,36 @@ export default function NewCard() {
           </article>
         </div>
         <footer>
-          <div className="footer-content"></div>
+          <div className="footer-content">
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter />
+            </a>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebook />
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram />
+            </a>
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub />
+            </a>
+          </div>
         </footer>
       </div>
     </div>
