@@ -1,0 +1,108 @@
+/*===================================================================
+    File Name: header.css
+    Creator: Marvin S.
+    Date: 2021-09-30
+    Project: Header Styling
+    Description: CSS file for the header component, including styles
+                 for the header layout and language switcher.
+    Last Update: 2021-10-01
+=====================================================================*/
+
+/* ================== Header Styling ================== */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Title Styling */
+.header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #333;
+}
+
+/* ================== Language Selector ================== */
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Ensures spacing between elements */
+}
+
+.language-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Spacing between language buttons */
+}
+
+/* Language Buttons */
+.language-selector button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.language-selector button:hover {
+  opacity: 0.8;
+}
+
+/* Flag Icons */
+.language-selector .flag {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+/* Separator Line */
+.language-selector .separator {
+  width: 1px;
+  height: 30px;
+  background-color: #000000;
+}
+
+/* Enhanced Language Button */
+.language-button {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.language-button:hover {
+  background-color: #357ae8;
+}
+
+/* ================== Responsive Design ================== */
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-actions {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .language-selector {
+    justify-content: center;
+  }
+}

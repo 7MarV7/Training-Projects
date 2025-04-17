@@ -1,0 +1,125 @@
+/*===================================================================
+    File Name: Calendar.css
+    Creator: Marvin S.
+    Date: 2021-09-30
+    Project: Calendar Card
+    Description: CSS file for the Calendar Card component, including 
+                 styles for the calendar display, navigation, and buttons.
+    Last Update: 2021-10-01
+=====================================================================*/
+
+/* ================== Calendar Styling ================== */
+
+.calendar .react-calendar {
+  width: 100%;
+  max-width: 500px;
+  background-color: var(--card-bg-color);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  line-height: 1.5em;
+}
+
+/* Tile Hover Effects */
+.calendar .react-calendar__tile:hover {
+  background-color: var(--hover-bg-color);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/* Today's Date Styling */
+.calendar .react-calendar__tile--now {
+  background: var(--primary-color);
+  color: rgb(0, 0, 0);
+  border-radius: 50%;
+}
+
+/* Active Date (Selected) Styling */
+.calendar .react-calendar__tile--active {
+  background: var(--active-bg-color);
+  color: rgb(0, 0, 0);
+  border-radius: 50%;
+}
+
+/* ================== Calendar Navigation Styling ================== */
+
+.react-calendar__navigation__label,
+.react-calendar__navigation__arrow {
+  color: black;
+}
+
+/* ================== Button Styling ================== */
+
+.card-calendar-card button {
+  font-size: 0.9rem;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-calendar-card button:hover,
+.card-calendar-card button:focus {
+  background-color: var(--button-hover-bg);
+  transform: scale(1.05);
+}
+
+.card-calendar-card button:active {
+  transform: scale(0.95);
+}
+
+/* ================== Open Calendar Button ================== */
+
+.card-calendar-card .open-calendar {
+  font-size: 0.9rem;
+  background-color: var(--button-bg-color);
+  margin-top: 1rem;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-calendar-card .open-calendar:hover,
+.card-calendar-card .open-calendar:focus {
+  background-color: var(--button-hover-bg);
+  transform: scale(1.05);
+}
+
+.card-calendar-card .open-calendar:active {
+  transform: scale(0.95);
+}
+
+/* ================== Month & Year View Styling ================== */
+
+.react-calendar__tile.react-calendar__month-view__days__day {
+  color: black;
+  background-color: transparent; /* Fixed bug */
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: gray;
+}
+
+.react-calendar__tile.react-calendar__year-view__months__month {
+  color: black;
+  background-color: var(--card-bg-color);
+  border-radius: 10px;
+  padding: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.react-calendar__tile.react-calendar__year-view__months__month:hover {
+  background-color: var(--hover-bg-color);
+  transform: scale(1.05);
+}

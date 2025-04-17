@@ -1,0 +1,155 @@
+/* Allgemeine Stile */
+html,
+body,
+header {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    61deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 1%,
+    rgba(15, 48, 193, 1) 10%,
+    rgba(6, 68, 160, 1) 34%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  background: rgb(81, 73, 217);
+  background: linear-gradient(
+    10%,
+    rgba(81, 73, 217, 1) 0%,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(15, 48, 193, 1) 10%,
+    rgba(6, 68, 160, 1) 34%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.header--text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header--text p {
+  padding-top: 20px;
+  margin: 5px;
+}
+
+header img {
+  display: flex;
+  width: 150px;
+  height: auto;
+  margin-left: 1.7rem;
+}
+
+header img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.header--logo {
+  display: flex;
+  width: 100%;
+}
+
+/* Navigation */
+nav {
+  background: #333;
+  color: #fff;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+
+/* Main Content */
+main {
+  padding: 2rem;
+  text-align: center;
+}
+
+main h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+main p {
+  font-size: 1.2rem;
+  margin: 15px 15px auto;
+}
+
+.react-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.react-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 15px 15px 15px;
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.react-logo:hover {
+  transform: scale(1.1);
+  border: 2px solid #007bff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.footer a {
+  color: #007bff;
+}
+
+.footer a:hover {
+  color: #fff;
+}

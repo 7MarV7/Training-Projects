@@ -1,0 +1,125 @@
+/*===================================================================
+    File Name: profile.css
+    Creator: Marvin S.
+    Date: 2021-09-30
+    Project: Profile Styling
+    Description: CSS file for the profile component, 
+                 including styles for profile header, details, and actions.
+    Last Update: 2021-10-01
+=====================================================================*/
+
+/* ================== Profile Header ================== */
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f9f9f9;
+}
+
+/* Profile Image */
+.profile-image {
+  width: 100px;
+  height: 100px; /* Ensures a square shape */
+  border-radius: 50%;
+  object-fit: cover;
+  aspect-ratio: 1/1; /* Maintain aspect ratio */
+  margin-right: 1rem;
+}
+
+/* Profile Info */
+.profile-info h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.profile-info p {
+  margin: 0;
+  color: gray;
+}
+
+/* ================== Profile Details ================== */
+
+.profile-details {
+  padding: 1rem;
+}
+
+.detail-item {
+  margin-bottom: 0.5rem;
+}
+
+.detail-item strong {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+/* ================== Profile Actions ================== */
+
+.profile-actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Auto-responsive */
+  gap: 0.8rem; /* Reduced spacing */
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+/* Action Buttons */
+.profile-action-button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  color: gray;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.profile-action-button:hover {
+  color: blue;
+  transform: scale(1.05);
+  background-color: rgba(0, 0, 255, 0.1);
+}
+
+/* ================== Edit Profile Button ================== */
+
+.profile-edit button {
+  font-size: 0.9rem;
+  background-color: var(--button-bg-color, #4285f4); /* Default fallback color */
+  width: 100%;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.profile-edit button:hover {
+  background-color: #357ae8;
+  transform: scale(1.1);
+}
+
+/* SVG Icons inside Button */
+.profile-edit button svg {
+  margin-right: 0.5rem;
+}
+
+/* ================== Responsive Design ================== */
+
+@media (max-width: 600px) {
+  .profile-actions {
+    grid-template-columns: 1fr; /* Single column layout for small screens */
+  }
+}

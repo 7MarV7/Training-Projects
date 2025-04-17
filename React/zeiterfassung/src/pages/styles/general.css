@@ -1,0 +1,14 @@
+/*================================================================================================================================
+    File Name: general.css
+        Creator: Marvin S.
+        Date: 2021-09-30
+        Project: General Imports
+        Description:  General CSS file for importing all the CSS files for the components.
+        last update: 2021-10-01
+ ==================================================================================================================================*/
+
+
+/* Imports */
+@import url('./profile.css');	
+@import url('./cards.css');
+@import url('./calendar.css');

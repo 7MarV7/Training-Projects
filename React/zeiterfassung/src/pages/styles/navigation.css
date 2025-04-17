@@ -1,0 +1,82 @@
+/*===================================================================
+    File Name: navigation.css
+    Creator: Marvin S.
+    Date: 2021-09-30
+    Project: Navigation Styling
+    Description: CSS file for the navigation component, 
+                 including styles for the navigation bar and its items.
+    Last Update: 2021-10-01
+=====================================================================*/
+
+/* ================== Navigation Bar ================== */
+
+.nav {
+  display: flex;
+  justify-content: space-evenly; /* Distribute items evenly */
+  align-items: center;
+  background-color: #3c424f;
+  padding: 10px 0;
+  flex-wrap: wrap; /* Allows navigation items to wrap on smaller screens */
+}
+
+/* ================== Navigation Links ================== */
+
+.nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 15px;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Add spacing between items (avoids border overlap) */
+.nav a:not(:first-child) {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Icon Styling */
+.nav i {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+/* Hover Effect */
+.nav a:hover {
+  background-color: #2a8f3e; /* Softer green */
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+/* Active Link Styling */
+.nav a.active {
+  background-color: #206030; /* Darker green */
+  color: white;
+  border-radius: 5px;
+}
+
+/* Ensure text inside the active link is well-formatted */
+.nav a.active span {
+  text-decoration: none;
+}
+
+/* ================== Responsive Design ================== */
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav a {
+    width: 100%;
+    text-align: center;
+    border-left: none;
+    padding: 10px;
+  }
+
+  .nav a:not(:first-child) {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
