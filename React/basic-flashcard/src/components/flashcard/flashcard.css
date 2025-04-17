@@ -3,14 +3,24 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 300px;
-  max-width: 60%;
-  height: ;
+  width: 60%;
+  max-width: 400px;
+  max-height: fit-content;
   padding: 15px;
-  margin: 100px auto;
+  margin: 50px auto;
   border-radius: 0.5rem;
   background-color: #1f2125;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+.flashcard-content * {
+  max-width: 100%;
+  word-wrap: break-word;
 }
 
 .profile-image {
@@ -21,11 +31,67 @@
   border-bottom-left-radius: 1rem;
 }
 
-/* Media Query für kleinere Bildschirme */
+.user-description {
+  text-align: left;
+  font-size: 0.8rem;
+  color: #fff;
+  margin: 10px 0;
+}
+
+.user-description h1 {
+  font-size: 1.2rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.email-link {
+  background-color: #007bff;
+}
+
+.linkedin-link {
+  background-color: #0a66c2;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  background-color: #0056b3;
+}
+
+.email-link:hover {
+  background-color: #0056b3;
+}
+
+.linkedin-link:hover {
+  background-color: #084a9e;
+}
+
+.button i {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Media Querys*/
 @media (max-width: 768px) {
   .flashcard-content {
-    width: 90%;
-    max-width: 400px;
+    width: 95%;
     padding: 10px;
     margin: 20px auto;
   }
@@ -33,5 +99,9 @@
   .profile-image {
     width: 60px;
     height: 60px;
+  }
+
+  .flashcard-content * {
+    font-size: 0.9rem;
   }
 }
