@@ -1,7 +1,7 @@
 import React from 'react';
 import './newcard.css';
+import 'remixicon/fonts/remixicon.css'; // Import Remix Icon CSS
 import avatar from 'assets/images/profile.jpg';
-import { FaTwitter, FaFacebook, FaInstagram, FaGithub } from 'react-icons/fa'; // Import icons
 
 export default function NewCard() {
   return (
@@ -48,29 +48,37 @@ export default function NewCard() {
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
+              title="Twitter"
+              aria-label="Twitter"
             >
-              <FaTwitter />
+              <i className="ri-twitter-line"></i>
             </a>
             <a
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
+              title="Facebook"
+              aria-label="Facebook"
             >
-              <FaFacebook />
+              <i className="ri-facebook-line"></i>
             </a>
             <a
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
+              title="Instagram"
+              aria-label="Instagram"
             >
-              <FaInstagram />
+              <i className="ri-instagram-line"></i>
             </a>
             <a
               href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
+              title="GitHub"
+              aria-label="GitHub"
             >
-              <FaGithub />
+              <i className="ri-github-line"></i>
             </a>
           </div>
         </footer>
